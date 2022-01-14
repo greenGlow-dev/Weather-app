@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .topH1 h1 {
+    color: #1F1F1F;
+
+}
+
+.search {
+    /* justify-content: space-between; */
+    margin-top: 20px
+}
+
+.search>input {
+    width: 280px;
+    border: 1.7px solid white;
+    padding: 20px;
+    position: absolute;
+    float: right;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.search>input:focus {
+
+    box-shadow: none;
+    outline: none;
+    border: 2px solid white;
+    color: white;
+}
+
+.basic-container {
+    background-image: url('../public/img/image_2021-12-19_00-05-32.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.card {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    width: 387px;
+    height: 547px;
+    background: rgba(0, 0, 0, .6);
+}
+
+.maninContainer {
+    display: grid;
+   justify-items: center;   
+    justify-content: center;
+}
+
+@media(max-width:400px) {
+
+    .card {
+        width: 350px;
+        height: 537px;
+    }
+}
+
+@media(max-width:370px) {
+
+    .card {
+        width: 320px;
+        height: 537px;
+    }
+}
+
+@media(max-width:330px) {
+
+    .card {
+        width: 290px;
+        height: 537px;
+    }
+}
+
+@media(max-width:300px) {
+
+    .card {
+        width: 250px;
+        height: 407px;
+        transform: translateY(55px);
+        
+    }
+    .search {
+       display: flex;
+       justify-items: center;
+       justify-content: center;
+    }
+    .search>input {
+        width: 180px;
+        border: 1px solid white;
+        padding: 15px;
+        right: 30px;
+        top: 5px;
+        float: none;
+        border-radius: 2px;
+       position: absolute;
+    
+    }
+    .search>input:focus {
+        outline: none;
+        border: 1.3px solid white;
+        color: white;
+    }
+}
